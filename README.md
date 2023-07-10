@@ -6,6 +6,7 @@ A simple script that allows for configureable speedzones that will fine players 
 * whitelisted jobs
 * configureable fine amounts
 * config option for multiplied fines if the person is going over a given value
+* KMH or MPH value config
 
 ## Dependency
 * qb-phone
