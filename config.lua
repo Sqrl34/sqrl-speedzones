@@ -1,7 +1,7 @@
 Config = Config or {}
 
 Config.ExemptJobs = { -- Exempt jobs
-    "police",
+    'police',
     'ambulance',
 }
 
