@@ -1,33 +1,30 @@
 Config = Config or {}
 
-Config.ExemptJobs = {
+Config.ExemptJobs = { -- Exempt jobs
     "police",
     'ambulance',
-    'tow'
 }
 
-Config.Message= {
+Config.Message= { -- Messages when the person speeds within a speed zone
     sender = 'Police Department',
     subject = 'Speed Ticket',
     message = 'You have been fined for speeding, lets not do that again'
 }
 
-Config.Sound = true
-
-Config.Type = {
+Config.Type = { -- either one is true but not both
     mph = true,
     kph = false
 }
 
 Config.SpeedCams = {
     [1] = {
-        coords = vector4(123.75, -26.13, 67.76, 339.62),
-        length = 20,
-        width = 20,
-        speedlimit = 30,
-        basefine = 100,
-        multiplieron = true,
-        multiplier = {
+        coords = vector4(123.75, -26.13, 67.76, 339.62), -- Location, should be centered and the heading is the heading for the polyzone
+        length = 20, --  Length of plolyzone
+        width = 20, -- Width of polyzone
+        speedlimit = 30, -- Speed limit for that zone
+        basefine = 100, -- Minimum fine a person will recieve
+        multiplieron = true, -- If you would like fines to be multiplied, make it true
+        multiplier = { -- For every config, if the persons speed is greater than the one listed here, the multiplier will multiply the fine by the given amount
             [1] = {speed = 10, multiply = 1.5},
             [2] = {speed = 20, multiply = 2},
             [3] = {speed = 30, multiply = 2.5},
